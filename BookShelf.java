@@ -4,7 +4,7 @@ import java.util.ArrayList;
 public class BookShelf {
   private ArrayList<Book> books;
 
-  public BookShelf(int maxsize) { this.books =  new ArrayList<>(); }
+  public BookShelf(int initialsize) { this.books =  new ArrayList<Book>(initialsize); }
 
   public Book getBookAt(int index) { return books.get(index); }
 
